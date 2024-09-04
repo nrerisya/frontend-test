@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no"> <!-- Disable iOS auto telephone number detection -->
+    <title>Front-End Test</title>
+    <link href="css/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="images/logo.svg" alt="Logo">
+      </a>
+      
+      <nav class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div id="nav-links">
+          <a href="#development">Development & Integration</a>
+          <a href="#design">UI & UX Design</a>
+          <a href="#connect">Connect</a>
+        </div>
+      </nav>
+    </header>
+
+     <!-- Main Content -->
+    <main>
+      <section id="development">
+        <center>
+          <h1>Development &amp; Integration</h1>
+          <h2>Our development and integration services cater to organizations looking at digital transformation and Industry 4.0. Let’s work together to realize your business goals today.</h2>
+        </center>
+        
+        <div class="cards-container">
+          <!--Card 1-->
+          <div class="card-hover">
+            <div class="card-content">
+              <img src="images/dev-int/cust-dev.svg" alt="cust-dev">
+              <h5>Customized Development</h5>
+              <h3>Tailor-made solutions for your business</h3>
+              <p>Can’t find a ready-made solution that fits? We can custom build mobile & web applications to suit your business needs. </p>
+            </div>
+          </div>
+        
+          <!--Card 2-->
+          <div class="card">
+            <div class="card-content">
+              <img src="images/dev-int/int-api.svg" alt="cust-dev">
+              <h5>Integration & API Management</h5>
+              <h3>Achieve digital transformation via an API management ecosystem</h3>
+              <p>Venture into the mobile space with our mobility services. From mobile-first websites to mobile apps, we’re ready to help you develop a mobile solution that works. </p>
+            </div>
+          </div>
+        
+          <!--Card 3-->
+          <div class="card">
+            <div class="card-content">
+              <img src="images/dev-int/cloud-native.svg" alt="cust-dev">
+              <h5>Cloud-native Development</h5>
+              <h3>Enhance your business in a cloud-native environment</h3>
+              <p>Improve business agility, velocity and flexibility through the cloud – we are here to guide you through the entire process. </p>
+            </div>
+          </div>
+        
+          <!--Card 4-->
+          <div class="card">
+            <div class="card-content">
+              <img src="images/dev-int/mobile-dev.svg" alt="cust-dev">
+              <h5>Mobile Development</h5>
+              <h3>Become an anywhere business</h3>
+              <p>From mobile-first websites to mobile apps, we’re ready to help you develop a mobile solution that works.</p>
+            </div>
+          </div>
+        
+          <!--Card 5-->
+          <div class="card">
+            <div class="card-content">
+              <img src="images/dev-int/app-modern.svg" alt="cust-dev">
+              <h5>Application Modernisation</h5>
+              <h3>Breathing new life into old technology</h3>
+              <p>Give legacy or aging systems a new lease on life. We can help you modernise them to better serve your business needs.</p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <section id="design">
+        <center>
+          <h1>UI &amp; UX Design</h1>
+          <h2>We bring value to your business by producing seamless, multi-platform digital experiences that result in strong, meaningful user engagements. Read more about our services below.</h2>
+        </center>
+
+        <div class="cards-container">
+          <!--card 1-->
+          <div class="card">
+            <div class="card-content">
+              <img src="images/ui-ux/ui.svg" alt="cust-dev">
+              <h5>User Interface</h5>
+              <h3>Intuitive digital experiences to elevate your business</h3>
+              <p>Through good UX design, we can help you capture and retain the trust, business and loyalty of key customer groups.</h2>
+            </div>
+          </div>
+
+          <!--card 2-->
+          <div class="card">
+            <div class="card-content">
+              <img src="images/ui-ux/ux.svg" alt="cust-dev">
+              <h5>User Experience</h5>
+              <h3>Deliver memorable brand experiences using human-centred design</h3>
+              <p>We meld innovation and technology with content and design best practices to translate your business goals into experiences that are meaningful to customers.</p>
+            </div>
+          </div>
+
+          <!--card 3-->
+          <div class="card">
+            <div class="card-content">
+              <img src="images/ui-ux/cloud-marketing.svg" alt="cust-dev">
+              <h5>Cloud Marketing</h5>
+              <h3>Leverage cloud applications for digital marketing efficacy</h3>
+              <p>Through social media and cloud marketing, we help create impactful digital campaigns and experiences that are bound to captivate audiences.</p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+
+      <section id="connect">
+        <center>
+          <h1>Connect</h1>
+          <h2>Every successful connection starts in conversation. Drop us a line today :)</h2>
+        </center>
+      
+        <div class="form-container">
+          <form id="contact-form">
+            <div class="form-group row">
+              <input type="text" id="name" placeholder="Name">
+              <input type="email" id="email" placeholder="Email address">
+              <input type="text" id="contact" placeholder="Contact no.">
+            </div>
+            <div class="form-group">
+              <textarea id="message" placeholder="How can we help?"></textarea>
+            </div>
+            <div class="form-group buttons">
+              <button type="button" id="clear-btn">Clear</button>
+              <button type="submit" id="submit-btn" class="btn-disabled" disabled>Connect with us</button>
+            </div>
+          </form>
+        </div>
+        <script src="script.js"></script>
+      </section>
+      
+    </main>
+
+    <!--footer-->
+    <footer>
+      <span>© 2021 fourtitude.asia. All rights reserved.</span>
+    </footer>
+
+  </body>
+</html>

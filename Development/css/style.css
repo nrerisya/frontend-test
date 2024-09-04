@@ -1,0 +1,414 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333333;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 171.69px;
+  height: 30px;
+}
+
+/* Navbar*/
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar #nav-links {
+  display: flex;
+  justify-content: end;
+  margin-right: 200px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+  border-bottom-color: #fff;
+}
+
+.navbar a:active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/*Hamburger Menu*/
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.hamburger span {
+  background-color: white;
+  height: 3px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/*Main Content*/
+main {
+  margin-top: 60px;
+  padding: 0px;
+}
+
+#development, 
+#connect {
+  background: #F0F0F0;
+  width: 100%;
+  padding: 30px 150px;
+}
+
+#design {
+  width: 100%;
+  padding: 30px 150px;
+}
+
+/* Text*/
+h1, h2, h3, h5, p {
+  font-family: Roboto, sans-serif;
+  margin: 0; 
+  padding: 0;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px; 
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 50px; 
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #666666;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px; 
+}
+
+.cards-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  margin: 30px;
+}
+
+.card, .card-hover {
+  overflow: hidden; 
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  width: 300px;
+  height: 364px;
+  box-shadow: 0 4px 6px #838282;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-hover:hover, .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px #838282;
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; 
+}  
+
+.card .card-content img {
+  width: 100px; 
+  height: 100px;
+  object-fit: contain; 
+  margin-bottom: 16px; 
+}
+
+.card-hover .card-content img {
+  width: 150px; 
+  height: 100px; 
+  object-fit: contain; 
+}
+
+/*Form*/
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-group.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.form-group.row input {
+  flex: 1;
+  min-width: 250px;
+}
+
+.form-group textarea {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+input, textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  width: 180px;
+  height: 42px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.btn-disabled {
+  background-color: rgba(15, 74, 178, 0.5);
+  color: white;
+  cursor: not-allowed;
+}
+
+.btn-enabled {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button#clear-btn {
+  background-color: #f5f5f5;
+  border: 2px solid #0F4AB2;
+  color: #0F4AB2;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 49px;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+  bottom: 0; 
+  background-color: #333333;
+  padding-right: 20px; 
+  z-index: 1000; 
+}
+
+footer span {
+  margin-right: 200px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+/* Responsive*/
+@media (max-width: 1200px) {
+  #development, #connect, #design {
+    padding: 30px 80px;
+  }
+
+  a img {
+    margin-left: 100px;
+  }
+
+  nav {
+    margin-right: 100px;
+  }
+
+  footer span {
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 992px) {
+  #development, #connect, #design {
+    padding: 30px 50px;
+  }
+
+  a img {
+    margin-left: 50px;
+  }
+
+  nav {
+    margin-right: 50px;
+  }
+
+  footer span {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 15px;
+  }
+
+  a img {
+    margin-left: 20px;
+    width: 120px;
+  }
+
+  .navbar #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  .navbar #nav-links.show {
+    display: flex;
+  }
+
+  .navbar a {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  #development, #connect, #design {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  h2 {
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .card, .card-hover {
+    width: 100%;
+  }
+
+  footer {
+    padding-right: 10px;
+  }
+
+  footer span {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    padding: 10px;
+  }
+
+  a img {
+    width: 100px;
+    margin-left: 10px;
+  }
+
+  nav {
+    margin-right: 10px;
+  }
+
+  #development, #connect, #design {
+    padding: 15px;
+  }
+
+  .form-group.row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}
